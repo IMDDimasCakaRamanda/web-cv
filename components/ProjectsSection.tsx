@@ -20,14 +20,6 @@ const projects = [
     github: "https://github.com/IMDDimasCakaRamanda/Yursayur",
     link: "https://imddimascakaramanda.github.io/Yursayur/",
   },
-  {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
-  },
 ]
 
 const ProjectsSection = () => {

@@ -4,11 +4,12 @@ import Image from "next/image"
 const skills = [
   { skill: "HTML" },
   { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "Next.js" },
+  { skill: "React" },
+  { skill: "Figma" },
   { skill: "Tailwind CSS" },
   { skill: "Git" },
   { skill: "GitHub" },
+  { skill: "Bootstrap" },
 ]
 
 const AboutSection = () => {
@@ -26,24 +27,18 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Hosna and I am a{" "}
+              Hi, my name is Dimas and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in Los Angeles, CA.
+              <span className="font-bold">{" driven"}</span> student studying Software Engineering at SMKN 1 Denpasar.
             </p>
             <br />
             <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
+            I aim to become a proficient software engineer by applying my theoretical understanding to real-world projects. My goal is to contribute to the advancement of technology through innovative software solutions.
             </p>
             <br />
             <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+            As a student in the Software Engineering program, I strive to develop a strong foundation in programming languages, algorithms, and software design principles. My objective is to excel in problem-solving and create efficient and user-friendly applications.
             </p>
             <br />
             <p>
@@ -74,9 +69,9 @@ const AboutSection = () => {
             <Image
               src="/hero-image.png"
               alt=""
-              width={325}
-              height={325}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
+              width={3350}
+              height={350}
+              className="hidden md:block md:relative md:bottom-4 md:left-10 md:z-0 mt-10"
             />
           </div>
         </div>
