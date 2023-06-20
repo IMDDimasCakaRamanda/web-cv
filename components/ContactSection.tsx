@@ -5,7 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactForm(){
   const [state, handleSubmit] = useForm("mayzrlbb");
   if(state.succeeded){
-    return <p>test</p>;
+    location.reload();
   }
   return(
   <section id='contact'>
@@ -19,15 +19,10 @@ function ContactForm(){
         <div className="relative mb-6">
           <input
             type="text"
-            className="w-full rounded border-5 bg-transparent px-3 py-[0.32rem] outline-white text-neutral-300"
+            className="w-full rounded border-5 bg-transparent px-3 py-[0.32rem] outline-slate-700 text-neutral-300"
             id="name"
             name='name'
             placeholder="Name" />
-          <label
-            htmlFor="name"
-            className="left-3 top-0 mb-0 max-w-[90%] origin-[0_0] pt-[0.37rem] leading-[1.6]"
-            >
-          </label>
           <ValidationError 
               prefix="Name" 
               field="name"
@@ -35,14 +30,12 @@ function ContactForm(){
             />
         </div>
           <div className='relative mb-6'>
-            <input className='peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0'
+            <input className='w-full rounded border-5 bg-transparent px-3 py-[0.32rem] outline-slate-700 text-neutral-300 '
               id="email"
               type="email" 
               name="email"
+              placeholder='Email Address'
             />
-            <label className='pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary' htmlFor="email">
-              Email Address
-            </label>
             <ValidationError 
               prefix="Email" 
               field="email"
@@ -50,21 +43,15 @@ function ContactForm(){
             />
           </div>
           <div className='relative mb-6'>
-            <textarea className='peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0'
+            <textarea className='w-full rounded border-5 bg-transparent px-3 py-[0.32rem] outline-slate-700 text-neutral-300 scroll-none overflow-hidden'
               id="message"
               name="message"
               placeholder='Message'
             />
-            <label className='pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary' htmlFor="message">Message</label>
-            <ValidationError 
-              prefix="Message" 
-              field="message"
-              errors={state.errors}
-            />
           </div>
           <button className='active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]] inline-block w-full rounded bg-blue-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-blue-300 focus:bg-blue-900 focus:outline-none focus:ring-0 active:bg-blue-600 shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
           type="submit" disabled={state.submitting}>
-            Submit
+            Send
           </button>
       </form>
       </div>
