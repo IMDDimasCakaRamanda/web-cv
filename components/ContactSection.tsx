@@ -1,9 +1,6 @@
 "use client"
-import 'tw-elements';
-import {Ripple, Input, initTE,} from 'tw-elements';
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-initTE({Ripple, Input});
 
 function ContactForm(){
   const [state, handleSubmit] = useForm("mayzrlbb");
@@ -22,7 +19,7 @@ function ContactForm(){
         <div className="relative mb-6">
           <input
             type="text"
-            className="w-full rounded border-5 bg-transparent px-3 py-[0.32rem] outline-none text-neutral-300"
+            className="w-full rounded border-5 bg-transparent px-3 py-[0.32rem] outline-white text-neutral-300"
             id="name"
             name='name'
             placeholder="Name" />
