@@ -4,3 +4,4 @@ describe('template spec', () => {
     cy.viewport('macbook-16')
   })
 })
+export{}
