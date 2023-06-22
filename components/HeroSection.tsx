@@ -34,13 +34,14 @@ const HeroSection = () => {
             smooth={true}
             offset={-100}
             duration={500}
+            id="button-to-projects"
           >
             Projects
           </Link>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
-        <Link
+        <Link id="button-to-about"
           to="about"
           activeClass="active"
           spy={true}

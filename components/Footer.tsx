@@ -19,12 +19,14 @@ const Footer = () => {
             <AiOutlineGithub
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-100"
               size={30}
+              id="button-github"
             />
           </a>
           <a
-            href="https://twitter.com/hqasmei"
+            href="https://twitter.com/Dmosas1"
             rel="noreferrer"
             target="_blank"
+            id="button-twitter"
           >
             <AiOutlineTwitter
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-100"
@@ -32,21 +34,22 @@ const Footer = () => {
             />
           </a>
 
-          <a
+          {/* <a
             href="https://www.linkedin.com/in/hosnaqasmei/"
             rel="noreferrer"
             target="_blank"
           >
-            {/* <AiOutlineLinkedin
+            <AiOutlineLinkedin
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-100"
               size={30}
             />
-          </a>
+          </a> */}
           <a
-            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
+            href="https://www.youtube.com/channel/UC72Usl6jBdNCqh9j81QvnSQ"
             rel="noreferrer"
             target="_blank"
-          > */}
+            id="button-yt"
+          >
             <AiOutlineYoutube
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-100"
               size={30}
