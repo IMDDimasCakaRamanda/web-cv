@@ -35,4 +35,10 @@
 //     }
 //   }
 // }
+Cypress.Commands.add("Form", ({ Name, Email, Message }) => {
+    cy.get("#name").type(Name);
+    cy.get("#email").type(Email);
+    cy.get("#message").type(Message);
+    cy.get("#button").click();
+  });
 export{}
