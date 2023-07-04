@@ -3,7 +3,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 function ContactSection(){
-  const [state, handleSubmit] = useForm("mayzrlbb");
+  const [state, handleSubmit] = useForm("mzblplwp");
   if(state.succeeded){
     location.reload();
   }

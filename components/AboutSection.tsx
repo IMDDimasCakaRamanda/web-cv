@@ -1,18 +1,30 @@
 import React from "react"
 import Image from "next/image"
 
-const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "React" },
-  { skill: "Figma" },
-  { skill: "Tailwind CSS" },
-  { skill: "Git" },
-  { skill: "GitHub" },
-  { skill: "Bootstrap" },
-]
+const skills:string[] = ['HTML','CSS','React','Tailwind CSS','Github','Bootstrap','Figma','Javascript']
+
+// const skills = [
+//   { skill: "HTML" },
+//   { skill: "CSS" },
+//   { skill: "React" },
+//   { skill: "Figma" },
+//   { skill: "Tailwind CSS" },
+//   { skill: "Git" },
+//   { skill: "GitHub" },
+//   { skill: "Bootstrap" },
+// ]
 
 const AboutSection = () => {
+  const renderSkills = () => {
+    return skills.map((item:string, idx:number) => (
+      <p
+        key={idx}
+        className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-900 rounded font-semibold"
+      >
+        {item}
+      </p>
+    ));
+  };
   return (
     <section id="about">
       <div className="my-40 pb-12 md:pt-16 md:pb-48">
@@ -27,7 +39,7 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Dimas and I am a{" "}
+              Hi, my name is I Made Dimas Caka Ramanda and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
               <span className="font-bold">{" driven"}</span> student studying Software Engineering at SMKN 1 Denpasar.
@@ -51,16 +63,7 @@ const AboutSection = () => {
           <div className="text-center md:w-1/2 md:text-left">
             <h1 className="text-2xl font-bold mb-6">My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-              {skills.map((item, idx) => {
-                return (
-                  <p
-                    key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                  >
-                    {item.skill}
-                  </p>
-                )
-              })}
+              {renderSkills()}
             </div>
             <Image
               src="/hero-image.png"
