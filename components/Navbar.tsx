@@ -46,14 +46,14 @@ export default function Navbar() {
                 <h2 className="text-white text-2xl font-bold">Dimas Caka</h2>
               </div>
             </Link>
-            <div className="md:hidden">
+            {/* <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-red-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 

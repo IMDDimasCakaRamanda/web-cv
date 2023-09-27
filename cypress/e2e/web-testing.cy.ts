@@ -1,7 +1,7 @@
 describe('Navigation Test', () => {
   it('All navigation work', () => {
     cy.visit('http://dimas-caka.vercel.app')
-    cy.viewport('iphone-xr')
+    // cy.viewport('iphone-xr')
     cy.contains('About').click({force:true})
     cy.contains('Projects').click()
     cy.contains('Contact').click({force:true})
@@ -14,13 +14,19 @@ describe('Navigation Test', () => {
 describe('Form Test', () => {
   it("Form working fine", () => {
     cy.visit('http://dimas-caka.vercel.app')
-    cy.viewport('iphone-xr')
+    // cy.viewport('iphone-xr')
     cy.Form({
       Name: "Cypress",
       Email: "cypress@email.com",
       Message: "Hello im testing your contact form",
-    })
+    })   
     cy.get('#button').click()
+    cy.wait(3000)
+ 
+    // cy.get('#name').type('Cypress')
+    // cy.get('#email').type('cypress@email.com')
+    // cy.get('#message').type('Im testing your contact form')
+    // cy.get('form').submit();
   })
 })
 
