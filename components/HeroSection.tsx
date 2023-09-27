@@ -24,7 +24,7 @@ const HeroSection = () => {
             <span className="font-semibold text-green-300">
               Student{" "}
             </span>
-            I am a student majoring in Software Engineering at SMKN 1 Denpasar to develop my skills and knowledge in the field.
+            I am a student majoring in Software Engineering at SMKN 1 Denpasar to develop my skills and knowledge in the field. 
           </p>
           <Link
             to="projects"
